@@ -16,7 +16,7 @@ methodName is the name of a method in the script, currently attached to that obj
 value can be a string, a number, or can be empty.
 */
 
-//the gameobject objectName should be _unityMessanger in your scene so it correctly gets messages.
+//the gameobject objectName should be _unityMessenger in your scene so it correctly gets messages.
 //the method names should also not be changed but if you want something else then let me know and ill implement it benjamin_work_0@hotmail.com
 
 namespace BeeCom{
@@ -66,3 +66,4 @@ namespace BeeCom{
         }
     }
 }
+
