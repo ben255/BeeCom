@@ -23,25 +23,26 @@ namespace BeeCom{
     public class fromBeeCom : MonoBehaviour
     {   
 
-        public static string userInfo = "";
-        public static string userBitmap = "";
-        public static string firebaseJson = "";
+        public string userInfo = "";
+        public string userBitmap = "";
+        public string firebaseJson = "";
 
         //Sending back a json of the user playing the game, If its a guest. It will be a generic user image(can also just ignore it and add your own generic one to save compution), and 'guest' as name.
-        public static void setUserInfo(string message)
+        public void setUserInfo(string message)
         {
             userInfo = message;
+            Debug.Log($"User info set: {message}");
         }
         //The image as a bitmap
-        public static void setUserBitmap(string message)
+        public void setUserBitmap(string message)
         {
-
+            userBitmap = message;
         }
 
         //To implement firebase backend stuff.
-        public static void setFirebaseJson(string message)
+        public void setFirebaseJson(string message)
         {
-
+            firebaseJson = message;
         }
     }
 }
