@@ -1,4 +1,5 @@
 # BeeCom
 B-ee.se and your webglGame communications
+Ive stopped exporting to unity package as its a waste of time honestly.
 
-1_0 is the latest, Use that.
+Just take these cs files. Add them in your Assets/plugins/WebGL/BeeComs. If the folders dont exist then make them, the path is important.
