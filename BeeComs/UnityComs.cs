@@ -53,7 +53,7 @@ namespace BeeCom{
             userInfo = message;
             Debug.Log($"User info set: {message}");
         }
-        //The image as a bitmap
+        //The image as a bitmap. The images are scaled down to 200x200. 
         public void setImageByte(string base64Image)
         {
             if (!string.IsNullOrEmpty(base64Image))
@@ -70,3 +70,4 @@ namespace BeeCom{
         }
     }
 }
+
