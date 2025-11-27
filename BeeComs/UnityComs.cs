@@ -26,7 +26,7 @@ namespace BeeCom{
         public static fromBeeCom Instance { get; private set; }
 
         public string userInfo = "";
-        public string userBitmap = "";
+        public byte[] imageArray;
         public string firebaseJson = "";
 
                 // 2. Awake is called when the script instance is being loaded.
@@ -54,9 +54,9 @@ namespace BeeCom{
             Debug.Log($"User info set: {message}");
         }
         //The image as a bitmap
-        public void setUserBitmap(string message)
+        public void setImageByte(byte[] message)
         {
-            userBitmap = message;
+            imageArray = message;
         }
 
         //To implement firebase backend stuff.
@@ -66,4 +66,3 @@ namespace BeeCom{
         }
     }
 }
-
