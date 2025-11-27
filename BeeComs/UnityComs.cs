@@ -16,7 +16,7 @@ methodName is the name of a method in the script, currently attached to that obj
 value can be a string, a number, or can be empty.
 */
 
-//the gameobject objectName should be _unityMessenger in your scene so it correctly gets messages. IT NEEDS TO BE IN THE START SCENE WHEN THE GAME LOADS.
+//the gameobject objectName should be _unityMessenger in your scene so it correctly gets messages.
 //the method names should also not be changed but if you want something else then let me know and ill implement it benjamin_work_0@hotmail.com
 
 namespace BeeCom{
@@ -54,9 +54,13 @@ namespace BeeCom{
             Debug.Log($"User info set: {message}");
         }
         //The image as a bitmap
-        public void setImageByte(byte[] message)
+        public void setImageByte(string base64Image)
         {
-            imageArray = message;
+            if (!string.IsNullOrEmpty(base64Image))
+            {
+                // Convert the Base64 string back to a byte array.
+                imageArray = Convert.FromBase64String(base64Image);
+            }
         }
 
         //To implement firebase backend stuff.
@@ -66,4 +70,3 @@ namespace BeeCom{
         }
     }
 }
-
