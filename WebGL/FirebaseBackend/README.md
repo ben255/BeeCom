@@ -1,5 +1,5 @@
 This is just an example for how you can set up your own firebase backend. 
-
+Very important to put the .jslib file in Assets/plugins/WebGL/THEN YOUR FOLDERS
 
 
             const firebaseConfig = {
