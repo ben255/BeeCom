@@ -19,14 +19,14 @@ mergeInto(LibraryManager.library, {
             // Your web app's Firebase configuration
             // For Firebase JS SDK v7.20.0 and later, measurementId is optional
             const firebaseConfig = {
-                apiKey: "AIzaSyA9y7CKxU9kZTLD5hvNHq4h7TvhuorxWrA",
-                authDomain: "antvslazer.firebaseapp.com",
-                databaseURL: "https://antvslazer-default-rtdb.europe-west1.firebasedatabase.app",
-                projectId: "antvslazer",
-                storageBucket: "antvslazer.firebasestorage.app",
-                messagingSenderId: "708625240514",
-                appId: "1:708625240514:web:36a936eae1e8d09e8bc65b",
-                measurementId: "G-859QD7VG5M"
+                apiKey: "      ",
+                authDomain: "       ",
+                databaseURL: "          ",
+                projectId: "        ",
+                storageBucket: "         ",
+                messagingSenderId: "               ",
+                appId: "              ",
+                measurementId: "             "
             };
         
             // Initialize Firebase
@@ -107,4 +107,5 @@ mergeInto(LibraryManager.library, {
     // FirebaseRunner_LogMyEvent: function(eventName) {
     //    // code to log event to firebase analytics
     // }
+
 });
